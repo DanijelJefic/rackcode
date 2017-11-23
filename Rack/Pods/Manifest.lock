@@ -1,0 +1,93 @@
+PODS:
+  - ActiveLabel (0.7.1)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
+  - GoogleAnalytics (3.17.0)
+  - IQKeyboardManagerSwift (4.0.8)
+  - JXHTTP (3.0.2)
+  - MBProgressHUD (1.0.0)
+  - NVActivityIndicatorView (3.6.1)
+  - PeekView (1.1.2)
+  - PinterestSDK (1.0.2):
+    - AFNetworking (~> 3.0)
+    - SSKeychain
+  - SIAlertView (1.3)
+  - Spectacles (1.0.1)
+  - SSKeychain (1.4.1)
+  - TMTumblrSDK (4.0.5):
+    - TMTumblrSDK/Activity (= 4.0.5)
+    - TMTumblrSDK/APIClient (= 4.0.5)
+    - TMTumblrSDK/AppClient (= 4.0.5)
+    - TMTumblrSDK/Core (= 4.0.5)
+  - TMTumblrSDK/Activity (4.0.5)
+  - TMTumblrSDK/APIClient (4.0.5):
+    - JXHTTP
+    - TMTumblrSDK/APIClient/Authentication (= 4.0.5)
+  - TMTumblrSDK/APIClient/Authentication (4.0.5):
+    - JXHTTP
+    - TMTumblrSDK/Core
+  - TMTumblrSDK/AppClient (4.0.5):
+    - TMTumblrSDK/Core
+  - TMTumblrSDK/Core (4.0.5):
+    - Spectacles (~> 1.0)
+  - TTGSnackbar (1.5.2)
+  - TwitterCore (2.8.0):
+    - Fabric
+  - TwitterKit (2.8.1):
+    - TwitterCore (>= 2.8)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - AFNetworking (~> 3.0)
+  - Crashlytics
+  - Fabric
+  - GoogleAnalytics
+  - IQKeyboardManagerSwift (= 4.0.8)
+  - MBProgressHUD (~> 1.0.0)
+  - NVActivityIndicatorView
+  - PeekView
+  - PinterestSDK
+  - SIAlertView
+  - TMTumblrSDK
+  - TTGSnackbar
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  ActiveLabel: 68625f22775f51c31bb691ca8de20f1e5a3bc825
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
+  JXHTTP: c37120f210cd2dfcb3470d70239f5253335e2f1a
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
+  PeekView: e57d7e6abfc1411826a750eadd850c06198f91a9
+  PinterestSDK: 6c6d92cc749e6520d1b6f1e75410c6fd1d05844c
+  SIAlertView: 20c794b55eaf44d888773ea51647cf8907723919
+  Spectacles: 8dc60711140320653724560e2d6bbb8a8f0940e4
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  TMTumblrSDK: bafecf74bb5dae10d42536d35229e40c18e9e4a1
+  TTGSnackbar: ca69045c72188fef27f575581052d72aff15abe2
+  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
+  TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
+
+PODFILE CHECKSUM: 957e18d5f9f156e0b2ae7c9d3e93b4840999367b
+
+COCOAPODS: 1.3.1
