@@ -34,7 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     //MARK: - Life Cycle
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        UIApplication.shared.applicationIconBadgeNumber = 1
+        UIApplication.shared.applicationIconBadgeNumber = 0
         Fabric.with([Crashlytics.self])
 
         transitionar = LazyTransitioner(animator: PopAnimator(orientation: .leftToRight))
@@ -77,11 +78,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
              */
             
             GFunction.shared.navigationPush(userInfo: data as! [AnyHashable : Any])
-        }
-        
-        NSSetUncaughtExceptionHandler { (exceptions) in
-            print("exception \(exceptions)")
-            print("exception reason \(String(describing: exceptions.reason))")
         }
         
         return true

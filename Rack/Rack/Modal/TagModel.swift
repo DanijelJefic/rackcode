@@ -182,28 +182,6 @@ class SimpleTagModel: NSObject {
             item.xAxis = newXAxis
             item.yAxis = newYAxis
             
-            /*
-             item(x,y) sometimes due to some issue we were receiving greater than the image(width,height) - Start
-             */
-            
-            if let strX = NumberFormatter().number(from: item.xAxis) {
-                let x = CGFloat(strX)
-                if x > imgPost.size.width {
-                    item.xAxis = "\(arc4random_uniform(UInt32(imgPost.size.width)))"
-                }
-            }
-
-            if let strY = NumberFormatter().number(from: item.yAxis) {
-                let y = CGFloat(strY)
-                if y > imgPost.size.height {
-                    item.yAxis = "\(arc4random_uniform(UInt32(imgPost.size.height)))"
-                }
-            }
-            
-            /*
-             item(x,y) sometimes due to some issue we were receiving greater than the image(width,height) - End
-             */
-            
             models.append(item)
         }
         return models
@@ -302,28 +280,6 @@ class LinkTagModel: NSObject {
             
             item.xAxis = newXAxis
             item.yAxis = newYAxis
-            
-            /*
-             item(x,y) sometimes due to some issue we were receiving greater than the image(width,height) - Start
-             */
-            
-            if let strX = NumberFormatter().number(from: item.xAxis) {
-                let x = CGFloat(strX)
-                if x > imgPost.size.width {
-                    item.xAxis = "\(arc4random_uniform(UInt32(imgPost.size.width)))"
-                }
-            }
-            
-            if let strY = NumberFormatter().number(from: item.yAxis) {
-                let y = CGFloat(strY)
-                if y > imgPost.size.height {
-                    item.yAxis = "\(arc4random_uniform(UInt32(imgPost.size.height)))"
-                }
-            }
-            
-            /*
-             item(x,y) sometimes due to some issue we were receiving greater than the image(width,height) - End
-             */
             
             models.append(item)
         }
@@ -429,28 +385,6 @@ class PeopleTagModel: NSObject {
             
             item.xAxis = newXAxis
             item.yAxis = newYAxis
-            
-            /*
-             item(x,y) sometimes due to some issue we were receiving greater than the image(width,height) - Start
-             */
-            
-            if let strX = NumberFormatter().number(from: item.xAxis) {
-                let x = CGFloat(strX)
-                if x > imgPost.size.width {
-                    item.xAxis = "\(arc4random_uniform(UInt32(imgPost.size.width)))"
-                }
-            }
-            
-            if let strY = NumberFormatter().number(from: item.yAxis) {
-                let y = CGFloat(strY)
-                if y > imgPost.size.height {
-                    item.yAxis = "\(arc4random_uniform(UInt32(imgPost.size.height)))"
-                }
-            }
-            
-            /*
-             item(x,y) sometimes due to some issue we were receiving greater than the image(width,height) - End
-             */
             
             models.append(item)
         }

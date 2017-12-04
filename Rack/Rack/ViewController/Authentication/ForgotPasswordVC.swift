@@ -125,7 +125,8 @@ class ForgotPasswordVC: UIViewController,UITextFieldDelegate {
                     
                     
                 } else {
-                    GFunction.shared.showPopUpAlert(error?.localizedDescription)
+                    AlertManager.shared.showPopUpAlert("", message: error?.localizedDescription, forTime: 2.0, completionBlock: { (Int) in
+                    })
                 }
         })
         

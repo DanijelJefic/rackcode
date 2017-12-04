@@ -238,6 +238,20 @@ class UploadVC: UIViewController {
         }
     }
     
+    //image compression
+    func compressImage(image: UIImage, compressionRatio : Float) -> Data? {
+        
+        let compressionQuality: Float = compressionRatio
+        
+        let rect = CGRect(x: 0.0, y: 0.0, width: CGFloat(image.size.width), height: CGFloat(image.size.height))
+        UIGraphicsBeginImageContext(rect.size)
+        image.draw(in: rect)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        let imageData = UIImageJPEGRepresentation(img!,CGFloat(compressionQuality))
+        UIGraphicsEndImageContext()
+        return imageData
+    }
+    
     //------------------------------------------------------
     
     //MARK:- API Call
@@ -260,25 +274,22 @@ class UploadVC: UIViewController {
          hashtag : abc,xyz,pqr tag_item : [{"name":"xyz","x_axis":"2","y_axis":"3"},{"name":"sadfsdf","x_axis":"2","y_axis":"3"}]
          if you passing share type in repost then passing item_id
          
-         
          ==============================
          
          */
         var data : Data? = nil
         
-        guard let _ = imgPost, imgPost != nil && imgPost.size != CGSize.zero else {
+        guard let _ = imgPost, (imgPost != nil || imgPost != UIImage()) && imgPost.size != CGSize.zero else {
             return
         }
         
         if imgPost.size.width == imgPost.size.height {
-            guard let imageData = UIImageJPEGRepresentation(imgPost, 0.40) else {
-                print("Image Data not found....")
+            guard let imageData : Data = self.compressImage(image: imgPost, compressionRatio: 0.40) else {
                 return
             }
             data = imageData
         } else {
-            guard let imageData = UIImageJPEGRepresentation(imgPost, 0.30) else {
-                print("Image Data not found....")
+            guard let imageData : Data = self.compressImage(image: imgPost, compressionRatio: 0.30) else {
                 return
             }
             data = imageData
@@ -289,16 +300,12 @@ class UploadVC: UIViewController {
             , withErrorAlert: true
             , withLoader: true
             , constructingBodyWithBlock: { (formData : AFMultipartFormData?) in
-                
                 formData!.appendPart(withFileData: data!, name: "image", fileName: "image.jpeg", mimeType: "image/jpeg")
-                
         }
             , withBlock: { (response : Dictionary<String, Any>?, code : Int?, error : Error?) in
                 
                 if (error == nil) {
-                    
                     self.dismiss(animated: true, completion: {
-                        
                     })
                     
                     let response = JSON(response ?? [:])
@@ -344,6 +351,9 @@ class UploadVC: UIViewController {
                         break
                     }
                     
+                } else {
+                    AlertManager.shared.showPopUpAlert("", message: error?.localizedDescription, forTime: 2.0, completionBlock: { (Int) in
+                    })
                 }
         })
     }
@@ -381,7 +391,6 @@ class UploadVC: UIViewController {
                 if (error == nil) {
                     
                     self.dismiss(animated: true, completion: {
-                        
                     })
                     
                     let response = JSON(response ?? [:])
@@ -411,8 +420,15 @@ class UploadVC: UIViewController {
                         break
                     default :
                         print("Default One called.....Upload")
+                        
+                        AlertManager.shared.showPopUpAlert("", message: response[kMessage].stringValue, forTime: 2.0, completionBlock: { (Int) in
+                        })
+                        
                         break
                     }
+                } else {
+                    AlertManager.shared.showPopUpAlert("", message: error?.localizedDescription, forTime: 2.0, completionBlock: { (Int) in
+                    })
                 }
         })
     }
@@ -442,13 +458,13 @@ class UploadVC: UIViewController {
         }
             , withBlock: { (response : Dictionary<String, Any>?, code : Int?, error : Error?) in
                 if (response != nil) {
-                    print(response)
+//                    print(response)
                 }
                 if (code != nil) {
-                    print(code)
+//                    print(code)
                 }
                 if (error != nil) {
-                    print(error?.localizedDescription)
+//                    print(error?.localizedDescription)
                 }
         })
     }
@@ -506,9 +522,9 @@ class UploadVC: UIViewController {
         
         //TODO:- Take care of change indexpath if UI change. :)
         //Require to change index path if any index path add above to post selection type
-        let indexPath1 = IndexPath(item: 0, section: 0)
-        let indexPath2 = IndexPath(item: 1, section: 0)
-        let indexPath7 = IndexPath(item: 6, section: 0)
+        let indexPath1 = IndexPath(row: 0, section: 0)
+        let indexPath2 = IndexPath(row: 1, section: 0)
+        let indexPath7 = IndexPath(row: 6, section: 0)
         
         guard let cellImageCell = tblPost.cellForRow(at: indexPath1) as? PostCell else  {
             print("first indexPath1 issue")
@@ -661,7 +677,7 @@ class UploadVC: UIViewController {
         
         //convert to string
         let hashTagString = arrayHashTag?.joined(separator: ",")
-        
+ 
         //check for share type. main or repost.
         switch shareType {
             
@@ -681,6 +697,7 @@ class UploadVC: UIViewController {
             requestModel.height = "\(imgPost.size.height)"
             if dictFromParent != nil {
                 requestModel.item_id = dictFromParent?.itemId
+                
                 self.callEditItemAPI(requestModel)
             } else {
                 self.callUploadItemAPI(requestModel)
@@ -702,6 +719,7 @@ class UploadVC: UIViewController {
             requestModel.item_id = dictFromParent?.itemId
             requestModel.width = "\(imgPost.size.width)"
             requestModel.height = "\(imgPost.size.height)"
+            
             self.callUploadItemAPI(requestModel)
             
             break

@@ -1341,9 +1341,12 @@ class ProfileVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        AppDelegate.shared.isSwipeBack = true
+        
         if let _ = navigationController {
             AppDelegate.shared.transitionar.addTransition(forView: (navigationController?.topViewController?.view)!)
             navigationCOntroller = navigationController
+            navigationController?.delegate = AppDelegate.shared.transitionar
         }
         
         //TabBarHidden:false

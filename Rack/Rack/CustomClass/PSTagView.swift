@@ -322,7 +322,6 @@ class PSTagView: UIView {
                 let scaleFactor = mainImage.getDeviceWiseImageScaleFactor(kScreenWidth)
                 
                 psTagView.append(
-                    
                     PSTagView(tagName: tag["name"] as! String, x: point.x * scaleFactor, y: point.y * scaleFactor, parrentView: parentView, tagDetai: tag, searchType : searchType)
                     
 //                    PSTagView(tagName: tag["name"] as! String, point: CGPoint(x: point.x * scaleFactor, y: point.y * scaleFactor), parrentView: parentView)

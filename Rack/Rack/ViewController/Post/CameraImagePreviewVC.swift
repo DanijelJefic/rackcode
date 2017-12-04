@@ -42,7 +42,6 @@ class CameraImagePreviewVC: UIViewController {
         if let _ = imgPost {
             imgPreView.image = imgPost
         }
-        
     }
     
     //------------------------------------------------------
@@ -71,6 +70,8 @@ class CameraImagePreviewVC: UIViewController {
     }
     
     func rightButtonClicked() {
+        
+        self.imgPost = self.imgPost.imageScale(scaledToWidth: kScreenWidth * 2)
         
         let uploadVC = secondStoryBoard.instantiateViewController(withIdentifier: "UploadVC") as! UploadVC
         uploadVC.imgPost = self.imgPost

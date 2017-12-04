@@ -655,7 +655,6 @@ extension UIImage {
         let scaleFactor: CGFloat =  i_width / oldWidth
         return scaleFactor
     }
-    
 }
 //MARK :-
 extension UIToolbar {

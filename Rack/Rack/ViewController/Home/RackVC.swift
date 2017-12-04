@@ -1274,6 +1274,18 @@ class RackVC: UIViewController {
                     }
                 })
                 
+                /*
+                 Like carousel would display only if item data count is greater or equal to 5
+                 else remove that block from newsfeed
+                 
+                 Updated count is shown after item is deleted that exists in like carousel
+                 */
+                if objFollow.itemData.count >= 5 {
+                    objFollow.userLikeCount = "LIKED \(objFollow.itemData.count) ITEMS"
+                } else {
+                    return false
+                }
+                
                 return true
             }
         })
@@ -1308,6 +1320,8 @@ class RackVC: UIViewController {
         arrayItemData.insert(notiItemData, at: 0)
         self.tblHome.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableViewRowAnimation.automatic)
         self.tblHome.scrollToRow(at: IndexPath(row: 0, section: 0), at: UITableViewScrollPosition.top, animated: false)
+        
+        self.addGestureToCell()
         
         self.viewNoFollowerFound.removeFromSuperview()
     }

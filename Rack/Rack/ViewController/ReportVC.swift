@@ -101,6 +101,8 @@ class ReportVC: UIViewController {
                     break
                 }
             } else {
+                AlertManager.shared.showPopUpAlert("", message: error?.localizedDescription, forTime: 2.0, completionBlock: { (Int) in
+                })
                 block(false,nil)
             }
         }
@@ -126,11 +128,9 @@ class ReportVC: UIViewController {
             
             self.callRequestReportAPI(requestModel) { (isSuccess : Bool, jsonResponse : JSON?) in
                 if isSuccess {
-                    
                     AlertManager.shared.showAlertTitle(title: "Thanks", message: jsonResponse!.stringValue, buttonsArray: ["OK"], completionBlock: { (Int) in
                         self.navigationController?.popViewController(animated: true)
                     })
-                    
                 }
             }
         } else {

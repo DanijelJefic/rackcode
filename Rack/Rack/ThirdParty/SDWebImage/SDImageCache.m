@@ -28,6 +28,8 @@ static SDImageCache *instance;
     {
         // Init the memory cache
         memCache = [[NSMutableDictionary alloc] init];
+        
+//        [memCache setTotalCostLimit:41943040];
 
         // Init the disk cache
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);

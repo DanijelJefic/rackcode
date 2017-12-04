@@ -54,8 +54,8 @@ class RequestModel: NSObject {
     var tag_item                : String!
     var item_id                 : String!
     var is_like                 : String!
-    var width                   : String!
-    var height                  : String!
+    var width                   : String! = "0"
+    var height                  : String! = "0"
     //
     var type                    : String!
     var timestamp               : String!

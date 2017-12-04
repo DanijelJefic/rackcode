@@ -144,7 +144,9 @@ class CreatePostVC: UIViewController {
         btnCameraRoll.titleLabel?.font = UIFont.applyBold(fontSize: 12.0)
         btnPhoto.titleLabel?.font = UIFont.applyRegular(fontSize: 12.0)
         
+        
         pageviewController.setViewControllers([arrayControllers[0]], direction: .reverse, animated: true, completion: nil)
+        
         
     }
     
@@ -163,7 +165,7 @@ class CreatePostVC: UIViewController {
 
         //Reuuire to next button disable. Button array getting from addBarButtons.
         var arrayButton = [UIButton]()
-        arrayButton = addBarButtons(btnLeft: BarButton(title: "Cancel"), btnRight: BarButton(title: "Next"), title: "PHOTO")
+        arrayButton = addBarButtons(btnLeft: BarButton(title: "Cancel"), btnRight: BarButton(title: "Next"), title: "PHOTO", isSwipeBack: false)
         btnNext = arrayButton[1]
 
         switch containerViewType {

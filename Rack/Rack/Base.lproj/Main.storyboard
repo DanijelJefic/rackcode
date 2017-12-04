@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w8k-mU-HRa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w8k-mU-HRa">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,7 +37,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ids-5N-OR1">
@@ -152,7 +152,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YeK-ER-jRa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="79X-9x-E0M">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNl-Pt-Wrk">
@@ -329,7 +329,7 @@
                     <navigationItem key="navigationItem" title="LOGIN" id="HTg-Rv-N17">
                         <barButtonItem key="leftBarButtonItem" id="AJb-iI-c1S">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KSO-ON-EJp">
-                                <rect key="frame" x="16" y="9" width="71" height="30"/>
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Back"/>
@@ -431,10 +431,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-La-27H">
-                                                <rect key="frame" x="50" y="65" width="314" height="44"/>
+                                                <rect key="frame" x="50" y="65" width="314" height="44.5"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsS-ts-w7I">
-                                                        <rect key="frame" x="10" y="0.0" width="249" height="44"/>
+                                                        <rect key="frame" x="10" y="0.0" width="249" height="44.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
@@ -443,7 +443,7 @@
                                                         </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nng-JY-EI9">
-                                                        <rect key="frame" x="259" y="0.0" width="50" height="46"/>
+                                                        <rect key="frame" x="259" y="0.0" width="50" height="46.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="Rz5-1u-MQl"/>
                                                         </constraints>
@@ -465,7 +465,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqe-h0-7A4">
-                                                <rect key="frame" x="169.5" y="159" width="75" height="30"/>
+                                                <rect key="frame" x="169.5" y="159.5" width="75" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Nqe-h0-7A4" secondAttribute="height" multiplier="5:2" id="kIk-2g-PzG"/>
                                                 </constraints>
@@ -476,14 +476,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCL-dC-H6s">
-                                                <rect key="frame" x="60" y="114" width="123" height="30"/>
+                                                <rect key="frame" x="60" y="114.5" width="123" height="30"/>
                                                 <state key="normal" title="Forgot Password?"/>
                                                 <connections>
                                                     <action selector="btnForgotPasswordClicked:" destination="cex-P8-e99" eventType="touchUpInside" id="o1n-WE-oB1"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Du6-w5-8tc">
-                                                <rect key="frame" x="50" y="224" width="314" height="54"/>
+                                                <rect key="frame" x="50" y="224.5" width="314" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Du6-w5-8tc" secondAttribute="height" multiplier="7:1.2" id="Zto-07-QEC"/>
                                                 </constraints>
@@ -495,7 +495,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBB-d3-MOF">
-                                                <rect key="frame" x="164.5" y="363" width="85" height="34"/>
+                                                <rect key="frame" x="164.5" y="363.5" width="85" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="LBB-d3-MOF" secondAttribute="height" multiplier="5:2" id="qYr-8N-yaG"/>
                                                 </constraints>
@@ -507,7 +507,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions and Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRn-XH-TSs" customClass="ActiveLabel" customModule="ActiveLabel">
-                                                <rect key="frame" x="0.0" y="427" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="427.5" width="414" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="911-fJ-AuH"/>
                                                 </constraints>
@@ -839,7 +839,7 @@
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="nV9-Uv-BJn">
-                        <rect key="frame" x="0.0" y="20" width="320" height="48"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -869,7 +869,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bit-2I-yVW">
-                                <rect key="frame" x="0.0" y="68" width="320" height="500"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFu-OC-A4f">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
@@ -977,7 +977,7 @@ your password.</string>
                     <navigationItem key="navigationItem" title="FORGOT PASSWORD" id="9Xf-XQ-arq">
                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="Dv2-xu-JTg">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h2s-vW-lUp">
-                                <rect key="frame" x="16" y="9" width="71" height="30"/>
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Back"/>
@@ -1183,7 +1183,7 @@ Privacy Policy &amp; Terms of Service</string>
                     <navigationItem key="navigationItem" title="REGISTER" id="LkC-wK-9Sn">
                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="XNY-nA-wsW">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t3a-CO-sKd">
-                                <rect key="frame" x="16" y="9" width="71" height="30"/>
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Back"/>
@@ -1427,7 +1427,7 @@ Privacy Policy &amp; Terms of Service</string>
                     <navigationItem key="navigationItem" id="OBn-2O-Deg">
                         <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="lKu-oZ-cCA">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mp4-kd-X6m">
-                                <rect key="frame" x="233" y="9" width="71" height="30"/>
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Save"/>
@@ -1466,7 +1466,7 @@ Privacy Policy &amp; Terms of Service</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOH-yJ-lxi">
-                                <rect key="frame" x="0.0" y="68" width="320" height="35"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ov-9d-Ctb">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
@@ -1500,7 +1500,7 @@ Privacy Policy &amp; Terms of Service</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDr-TU-jdE">
-                                <rect key="frame" x="0.0" y="103" width="320" height="465"/>
+                                <rect key="frame" x="0.0" y="99" width="320" height="469"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -1518,7 +1518,7 @@ Privacy Policy &amp; Terms of Service</string>
                     <navigationItem key="navigationItem" title="CHOOSE RACK" id="9sC-Oc-QiK">
                         <barButtonItem key="rightBarButtonItem" title="Done" style="plain" id="mxE-zu-Iwu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Phy-2p-vvc">
-                                <rect key="frame" x="233" y="9" width="71" height="30"/>
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Done"/>
@@ -1550,14 +1550,14 @@ Privacy Policy &amp; Terms of Service</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-8p-hv9" customClass="iCarousel">
-                                <rect key="frame" x="0.0" y="88" width="320" height="372"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uBC-8p-hv9" secondAttribute="height" multiplier="80:93" id="bMf-IK-trj"/>
                                 </constraints>
                             </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zu3-rM-rSK">
-                                <rect key="frame" x="5" y="460" width="310" height="37"/>
+                                <rect key="frame" x="5" y="436" width="310" height="37"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="deviceRGB"/>
@@ -1685,7 +1685,7 @@ Privacy Policy &amp; Terms of Service</string>
                     <navigationItem key="navigationItem" id="tbN-aA-sAl">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="Uwg-3e-2pI">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="itH-We-IKf">
-                                <rect key="frame" x="16" y="9" width="71" height="30"/>
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Cancel"/>
@@ -1693,7 +1693,7 @@ Privacy Policy &amp; Terms of Service</string>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="PP5-cQ-uaK">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w6F-lN-6XE">
-                                <rect key="frame" x="233" y="9" width="71" height="30"/>
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Done"/>
@@ -1794,7 +1794,7 @@ Privacy Policy &amp; Terms of Service</string>
                     <navigationItem key="navigationItem" id="W17-Dr-GXl">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="E7H-x5-Y0I">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MXq-fl-DeC">
-                                <rect key="frame" x="16" y="9" width="71" height="30"/>
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Cancel"/>
@@ -1823,7 +1823,7 @@ Privacy Policy &amp; Terms of Service</string>
                         <viewControllerLayoutGuide type="bottom" id="EvF-ae-fRu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jcm-zg-Hm2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0d-9Y-m5J">
@@ -1946,7 +1946,7 @@ Privacy Policy &amp; Terms of Service</string>
                     <navigationItem key="navigationItem" id="u9c-Dv-iQW">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="RkN-iw-fSL">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="srx-7Q-p5p">
-                                <rect key="frame" x="233" y="9" width="71" height="30"/>
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Done"/>
@@ -1977,7 +1977,7 @@ Privacy Policy &amp; Terms of Service</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhn-19-aYM">
-                                <rect key="frame" x="0.0" y="68" width="320" height="500"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddU-aO-jDb" customClass="CustomTextContainer" customModule="Rack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
@@ -2112,7 +2112,7 @@ Privacy Policy &amp; Terms of Service</string>
                     <navigationItem key="navigationItem" title="CHANGE PASSWORD" id="VFw-u0-V4w">
                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="DOU-kb-uYU">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hrx-Yc-Ddh">
-                                <rect key="frame" x="16" y="9" width="71" height="30"/>
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="15"/>
                                 <state key="normal" title="Back">
@@ -2233,7 +2233,7 @@ Privacy Policy &amp; Terms of Service</string>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="v28-4V-h83">
-                        <rect key="frame" x="0.0" y="20" width="320" height="48"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

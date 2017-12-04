@@ -1303,7 +1303,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Rack/Rack.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Danijel Jefic (R2NCEJ9JX4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 339W7R7VSC;
@@ -1315,10 +1315,10 @@
 				INFOPLIST_FILE = Rack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hyperlink.Rack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rack.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "514c247a-543a-41f1-907e-5f805509a92c";
-				PROVISIONING_PROFILE_SPECIFIER = "Rack Hyperlink Development";
+				PROVISIONING_PROFILE = "83a1440d-5c37-4688-84ae-3d2a04f47aa2";
+				PROVISIONING_PROFILE_SPECIFIER = Rack_AppStrore;
 				SWIFT_OBJC_BRIDGING_HEADER = "Rack/Resources/Rack-bridgeHeader.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1334,7 +1334,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Rack/Rack.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Danijel Jefic (R2NCEJ9JX4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 339W7R7VSC;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1345,10 +1345,10 @@
 				INFOPLIST_FILE = Rack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hyperlink.Rack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rack.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "514c247a-543a-41f1-907e-5f805509a92c";
-				PROVISIONING_PROFILE_SPECIFIER = "Rack Hyperlink Development";
+				PROVISIONING_PROFILE = "83a1440d-5c37-4688-84ae-3d2a04f47aa2";
+				PROVISIONING_PROFILE_SPECIFIER = Rack_AppStrore;
 				SWIFT_OBJC_BRIDGING_HEADER = "Rack/Resources/Rack-bridgeHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;

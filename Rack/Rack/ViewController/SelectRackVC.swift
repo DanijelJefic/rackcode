@@ -115,6 +115,9 @@ class SelectRackVC: UIViewController {
                 default:
                     break
                 }
+            } else {
+                AlertManager.shared.showPopUpAlert("", message: error?.localizedDescription, forTime: 2.0, completionBlock: { (Int) in
+                })
             }
             
 
